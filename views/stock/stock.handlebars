@@ -34,7 +34,7 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="/stock" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+        <a class="nav-link collapsed" href="/" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-fw fa-cog"></i>
           <span>Estoque</span>
         </a>
@@ -324,7 +324,7 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Ganhos (mensais)</div>
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Gastos Estoque (semanais)</div>
                       <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
                     </div>
                     <div class="col-auto">
@@ -341,7 +341,7 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Ganhos (anual)</div>
+                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Gastos Estoque (mensais)</div>
                       <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
                     </div>
                     <div class="col-auto">
@@ -358,7 +358,7 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tarefas</div>
+                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Estoque</div>
                       <div class="row no-gutters align-items-center">
                         <div class="col-auto">
                           <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
@@ -405,23 +405,22 @@
               <div class="card shadow mb-4">
                 <!-- Card Header - Dropdown -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Visão Geral de Ganhos</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Visão Geral do Estoque</h6>
                   <div class="dropdown no-arrow">
                     <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Dropdown Header:</div>
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
                     </div>
                   </div>
                 </div>
                 <!-- Card Body -->
                 <div class="card-body">
                   <div class="chart-area">
+                      <h2>percentual de cada item do Estoque</h2>
+                      <div class="">
+                          <!-- adionar item do estoque -->
+                      </div>
                     <canvas id="myAreaChart"></canvas>
                   </div>
                 </div>
@@ -433,7 +432,7 @@
               <div class="card shadow mb-4">
                 <!-- Card Header - Dropdown -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Revenue Sourcaes</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Adionar Estoque</h6>
                   <div class="dropdown no-arrow">
                     <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
@@ -449,20 +448,17 @@
                 </div>
                 <!-- Card Body -->
                 <div class="card-body">
-                  <div class="chart-pie pt-4 pb-2">
-                    <canvas id="myPieChart"></canvas>
-                  </div>
-                  <div class="mt-4 text-center small">
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-primary"></i> Direct
-                    </span>
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-success"></i> Social
-                    </span>
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-info"></i> Referral
-                    </span>
-                  </div>
+                    <div class="container">
+                        <h5>Adione um item ao Estoque</h5>
+                        <input type="text" placeholder="Digite o nome do produto" class="input-group-text mt-3">
+                         <input type="text" placeholder="Digite o marca do produto" class="input-group-text mt-3">
+                          <input type="text" placeholder="Digite a medida do produto" class="input-group-text mt-3">
+                           <input type="text" placeholder="Digite o valor do produto" class="input-group-text mt-3">
+                            <input type="text" placeholder="Digite o fornecedor do produto" class="input-group-text mt-3">
+                            <button class="btn btn-success mt-3">Enviar</button>
+                       
+                    </div>
+                  
                 </div>
               </div>
             </div>

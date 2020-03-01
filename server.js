@@ -6,6 +6,7 @@ const app = express()
 
 //adionando rotas
 const home = require('./routes/home')
+const stock = require('./routes/stock')
 
 //configurando bodyparser
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -20,6 +21,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 //enviando para router
 app.use('/', home)
+app.use('/stock', stock)
 
 //server
 const Port = 3000
